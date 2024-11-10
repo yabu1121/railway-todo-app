@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
-import { Redirect, useNavigte, Link } from "react-router-dom";
+import { Redirect, useNavigate, Link } from "react-router-dom";
 import { Header } from "../components/Header";
 import "./signin.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,7 +12,7 @@ import { url } from "../const";
 export const SignIn = () => {
   const auth = useSelector((state) => state.auth.isSignIn)
   const dispatch = useDispatch();
-  const navigate = useNavigte();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState();

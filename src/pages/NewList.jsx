@@ -8,7 +8,7 @@ import "./newList.css";
 
 export const NewList = () => {
   const [cookies] = useCookies();
-  const navigate = useHistory();
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const handleTitleChange = (e) => setTitle(e.target.value);

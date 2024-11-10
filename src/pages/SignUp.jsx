@@ -2,14 +2,14 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigte, Redirect } from "react-router-dom";
+import { useNavigate, Redirect } from "react-router-dom";
 import { signIn } from "../authSlice";
 import { Header } from "../components/Header";
 import { url } from "../const";
 import "./signUp.css";
 
 export const SignUp = () => {
-  const navigate = useNavigte();
+  const navigate = useNavigate();
   const auth = useSelector((state) => state.auth.isSignIn);
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
