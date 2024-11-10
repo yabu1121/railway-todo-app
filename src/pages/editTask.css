@@ -7,7 +7,8 @@
   color: #555555;
 }
 
-.edit-task-title, .edit-task-detail {
+.edit-task-title,
+.edit-task-detail {
   width: 300px;
   margin-bottom: 25px;
 }
@@ -22,7 +23,7 @@
 }
 
 .edit-task-button {
-  background-color: #242F9B;
+  background-color: #242f9b;
   color: #ffffff;
   width: 80px;
   height: 40px;
@@ -31,4 +32,4 @@
 
 .error-message {
   color: #ff3333;
-}/*# sourceMappingURL=editTask.css.map */
+} /*# sourceMappingURL=editTask.css.map */
